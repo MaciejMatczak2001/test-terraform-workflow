@@ -1,4 +1,4 @@
-resource "local_file" "foo" {
+resource "local_file" "app" {
   content  = <<EOT
 #!/usr/bin/env python3
 if __name__ == '__main__':
