@@ -28,4 +28,4 @@ jobs:
         with:
           name: app
       - id: run-app
-        run: ./app.py
+        run: $GITHUB_WORKSPACE/app.py
