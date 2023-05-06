@@ -11,7 +11,7 @@ jobs:
         run: terraform plan
       - id: terra-apply
         run: terraform apply -auto-approve
-      - id: upload-app.py
+      - id: upload-app
         uses: actions/upload-artifact@v2
         with:
           name: app
@@ -23,9 +23,9 @@ jobs:
       - uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - id: download-app.py
+      - id: download-app
         uses: actions/download-artifact@v2
         with:
           name: app
-      - id: run-app.py
+      - id: run-app
         run: ./app.py
