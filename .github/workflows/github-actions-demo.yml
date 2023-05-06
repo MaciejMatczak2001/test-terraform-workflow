@@ -27,5 +27,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: app
+      - id: add-permissions
+        run: chmod u+x $GITHUB_WORKSPACE/app.py
       - id: run-app
         run: $GITHUB_WORKSPACE/app.py
