@@ -1,3 +1,3 @@
 output "hello_print" {
-  value = local_file.app
+  value = local_file.app.filename
 }
