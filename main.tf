@@ -4,5 +4,5 @@ resource "local_file" "app" {
 if __name__ == '__main__':
   print("Hello")
 EOT
-  filename = "${path.module}/app.py"
+  filename = "${path.module}/${var.file_path}"
 }
